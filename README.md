@@ -1,1 +1,1 @@
-This is a educational app, aimed to teach the concept of RGB and how they constitute colors. 
+This is an educational app, aimed to teach the concept of RGB and how they constitute colors. 
