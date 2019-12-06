@@ -1,0 +1,68 @@
+body {
+    background-color: #232323;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 20px 0;
+    font-family: "Comic Sans MS";
+    background: #732323;
+}
+
+.square{
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 200ms;
+}
+
+#container{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#colorDisplay{
+    font-size: 200%;
+}
+#stripe{
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected {
+    background: #732323;
+    border: 2px solid black;
+}
+
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Comic Sans MS";
+    height: 100%;
+    transition: all 100ms;
+}
+
+button:hover{
+    border: 2px solid black;
+}
+
+#message{
+    font-family: "Comic Sans MS";
+    display: inline-block;
+    width: 20%;
+    font-weight: 700;
+}
