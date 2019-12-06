@@ -15,6 +15,17 @@ h1 {
     background: #732323;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.2;
+    padding: 12px 0;
+    font-family: "Comic Sans MS";
+    background: #732323;
+}
+
 .square{
     width: 30%;
     background: purple;
