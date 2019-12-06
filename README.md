@@ -1,1 +1,1 @@
-This is a color game.
+This is a educational app, aimed to teach the concept of RGB and how they constitute colors. 
