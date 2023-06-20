@@ -3,7 +3,7 @@
 <p></p>
 This is an educational app, aimed to teach the concept of RGB and how they constitute colors. 
 <p></p>
-<p>Link to the site: https://iatif.github.io/colorGame/</p>
+<p>Link to the site: https://atifshafi.github.io/colorGame/</p>
 
 <h2>Technologies Used</h2>
 
