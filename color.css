@@ -1,6 +1,8 @@
 body {
-    background-color: #232323;
+    background-color: #232323; /* Fallback */
+    background-image: linear-gradient(to bottom right, #232323, #343434); /* Example gradient */
     margin: 0;
+    font-family: "Comic Sans MS"; /* Apply default font */
 }
 
 h1 {
@@ -11,8 +13,8 @@ h1 {
     text-transform: uppercase;
     line-height: 1.2;
     padding: 20px 0;
-    font-family: "Comic Sans MS";
     background: #732323;
+    /* font-family already inherited from body */
 }
 
 h2 {
@@ -22,8 +24,8 @@ h2 {
     margin: 0;
     line-height: 1.2;
     padding: 12px 0;
-    font-family: "Comic Sans MS";
     background: #732323;
+    /* font-family already inherited from body */
 }
 
 .square{
@@ -62,7 +64,7 @@ button{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    font-family: "Comic Sans MS";
+    /* font-family already inherited from body */
     height: 100%;
     transition: all 100ms;
 }
@@ -71,9 +73,44 @@ button:hover{
     border: 2px solid black;
 }
 
+#reset.play-again-button {
+    background-color: #4CAF50; /* A green color, for example */
+    color: white;
+    font-weight: bold; /* Make text bolder */
+}
+#reset.play-again-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
 #message{
-    font-family: "Comic Sans MS";
+    /* font-family already inherited from body */
     display: inline-block;
     width: 20%;
     font-weight: 700;
+}
+
+#scoreLabel, #scoreDisplay {
+    /* font-family already inherited from body */
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.square.correct-guess-feedback {
+    animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+.square.incorrect-guess-feedback {
+    animation: shake 0.4s ease-in-out;
 }
